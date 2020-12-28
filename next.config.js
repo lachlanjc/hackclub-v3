@@ -1,7 +1,7 @@
 const withMDX = require('@next/mdx')({ extension: /\.mdx?$/ })
 module.exports = withMDX({
   trailingSlash: true,
-  pageExtensions: ['js', 'jsx', 'mdx'],
+  pageExtensions: ['js', 'mdx'],
   images: {
     domains: [
       'hackclub.com',
@@ -82,12 +82,12 @@ module.exports = withMDX({
       },
       {
         source: '/workshops/',
-        destination: 'https://workshops.hackclub.com/',
+        destination: 'https://hackclub-w.lachlanjc.com/',
         permanent: false
       },
       {
         source: '/workshops/([a-z_]+)/',
-        destination: 'https://workshops.hackclub.com/$1/',
+        destination: 'https://hackclub-w.lachlanjc.com/$1/',
         permanent: true
       }
     ]
@@ -100,71 +100,67 @@ module.exports = withMDX({
       },
       {
         source: '/workshops/_next/:path*',
-        destination: 'https://workshops.hackclub.com/_next/:path*'
-      },
-      {
-        source: '/summer/_next/:path*',
-        destination: 'https://summer.hackclub.com/_next/:path*'
+        destination: 'https://hackclub-w.lachlanjc.com/_next/:path*'
       },
       {
         source: '/team/',
-        destination: 'https://v2.hackclub.dev/team/'
+        destination: 'https://hackclub-v2.lachlanjc.com/team/'
       },
       {
         source: '/donate/',
-        destination: 'https://v2.hackclub.dev/donate/'
+        destination: 'https://hackclub-v2.lachlanjc.com/donate/'
       },
       {
         source: '/philosophy/',
-        destination: 'https://v2.hackclub.dev/philosophy/'
+        destination: 'https://hackclub-v2.lachlanjc.com/philosophy/'
       },
       {
         source: '/bank/',
-        destination: 'https://v2.hackclub.dev/bank/'
+        destination: 'https://hackclub-v2.lachlanjc.com/bank/'
       },
       {
         source: '/camp/',
-        destination: 'https://v2.hackclub.dev/camp/'
+        destination: 'https://hackclub-v2.lachlanjc.com/camp/'
       },
       {
         source: '/santa/',
-        destination: 'https://v2.hackclub.dev/santa/'
+        destination: 'https://hackclub-v2.lachlanjc.com/santa/'
       },
       {
         source: '/sponsorship/',
-        destination: 'https://workshops.hackclub.com/sponsorship/'
+        destination: 'https://hackclub-w.lachlanjc.com/sponsorship/'
       },
       {
         source: '/covid19/',
-        destination: 'https://workshops.hackclub.com/covid19/'
+        destination: 'https://hackclub-w.lachlanjc.com/covid19/'
       },
       {
         source: '/sunsetting-som/',
-        destination: 'https://workshops.hackclub.com/sunsetting-som/'
+        destination: 'https://hackclub-w.lachlanjc.com/sunsetting-som/'
       },
       {
         source: '/banner/',
-        destination: 'https://workshops.hackclub.com/banner/'
+        destination: 'https://hackclub-w.lachlanjc.com/banner/'
       },
       {
         source: '/conduct/',
-        destination: 'https://workshops.hackclub.com/conduct/'
+        destination: 'https://hackclub-w.lachlanjc.com/conduct/'
       },
       {
         source: '/workshop-bounty/',
-        destination: 'https://workshops.hackclub.com/workshop-bounty/'
+        destination: 'https://hackclub-w.lachlanjc.com/workshop-bounty/'
       },
       {
         source: '/vip-newsletters/',
-        destination: 'https://workshops.hackclub.com/vip-newsletters/'
+        destination: 'https://hackclub-w.lachlanjc.com/vip-newsletters/'
       },
       {
         source: '/vip-newsletters/(.*)',
-        destination: 'https://workshops.hackclub.com/vip-newsletters/$1'
+        destination: 'https://hackclub-w.lachlanjc.com/vip-newsletters/$1'
       },
       {
         source: '/transparency/may-2020/',
-        destination: 'https://workshops.hackclub.com/transparency-may/'
+        destination: 'https://hackclub-w.lachlanjc.com/transparency-may/'
       },
       {
         source: '/map/',
@@ -172,7 +168,7 @@ module.exports = withMDX({
       },
       {
         source: '/:path*',
-        destination: 'https://v2.hackclub.dev/:path*'
+        destination: 'https://hackclub-v2.lachlanjc.com/:path*'
       }
     ]
   },
