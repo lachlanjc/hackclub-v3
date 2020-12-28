@@ -30,7 +30,7 @@ const zoomSlide = keyframes({
 
 export async function getStaticProps() {
   const millionCount = (await getCount()) || null
-  return { props: { millionCount }, revalidate: 1 }
+  return { props: { millionCount } }
 }
 
 const SlackPage = ({ millionCount }) => (
