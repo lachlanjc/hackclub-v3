@@ -17,7 +17,6 @@ module.exports = withMDX({
   async redirects() {
     return [
       { source: '/start/', destination: '/', permanent: false },
-      { source: '/clubs/', destination: '/', permanent: false },
       { source: '/repl/', destination: '/', permanent: true },
       { source: '/c9/', destination: '/deprecated/cloud9/', permanent: true },
       {
@@ -103,6 +102,10 @@ module.exports = withMDX({
         destination: 'https://hackclub-w.lachlanjc.com/_next/:path*'
       },
       {
+        source: '/clubs/',
+        destination: 'https://site-fad3jrgp3.hackclub.dev/clubs/'
+      },
+      {
         source: '/team/',
         destination: 'https://hackclub-v2.lachlanjc.com/team/'
       },
@@ -174,6 +177,10 @@ module.exports = withMDX({
   },
   async headers() {
     return [
+      {
+        source: '/(.*)?',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex' }]
+      },
       {
         source: '/banners/(.*)',
         headers: [{ key: 'Access-Control-Allow-Origin', value: '*' }]
